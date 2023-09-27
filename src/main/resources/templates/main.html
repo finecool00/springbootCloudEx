@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Insert title here</title>
+	
+	
+	<link rel="stylesheet" href="/css/aws_develop.css">
+	<script defer src="/js/aws_develop.js"></script>
+
+
+</head>
+<body>
+	
+	<h3>클라우드 서비스를 활용한 어플리케이션 개발</h3>
+	<button onclick="location.href='S3Request' ">S3서비스 연결확인하기</button>
+	<hr/>	
+	
+	
+	<h3>버킷의 객체 업로드하기(파일 드롭 존)</h3>
+	<div class="file_box">
+	  <div class="file_name">이곳에 파일을 끌어놓으세요.</div>
+	</div>
+	<button type="button" class="upload_btn">S3파일 업로드</button> 
+	<hr/>
+	
+	
+	<h3>버킷의 객체목록 확인하기</h3>
+	<button type="button" class="list_bucket_objects">목록확인하기</button>
+	<hr/>
+	
+	<h3>버킷의 객체 삭제하기</h3>
+	<input type="text" name="bucket_obj_name" placeholder="버킷 객체명 입력">
+	<button type="button" class="delete_bucket_objects">목록확인하기</button>
+		
+	
+	
+	<hr/>
+	
+	<h3>람다 함수 호출시키기</h3>
+	<button class="lambda_call" >람다함수 호출시키기</button>
+		
+	
+	<hr/>
+	
+	<h3>SES이메일 인증</h3>
+	<button class="send_email">이메일전송</button>
+	
+	
+	<hr/>
+	
+	<h3>SNS + SQS 메시지 push(SNS => SQS)</h3>
+	<button class="send_sns">홍길동이 주문을 눌렀습니다</button>
+	
+	<h3>SQS 메시지 poll(당기기)</h3>
+	<button class="poll_sqs">홍길동님의 주문내역을 가져옵니다</button>
+	
+</body>
+</html>
